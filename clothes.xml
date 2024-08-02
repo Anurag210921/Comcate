@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+<listeners>
+	<listener class-name="testComponents.Listeners">
+		
+	</listener>
+	
+</listeners>	
+	
+  <test  name="Test"  preserve-order="true">
+    <classes>
+    <!-- <class name="com.AutomatiomTestCases.SignIn"/>-->
+      <class name="com.AutomatiomTestCases.MenClothing"/>
+      <class name="com.AutomatiomTestCases.verifyLinksTest"/>
+
+     <!--<class name="com.AutomatiomTestCases.buy_watch"/>-->
+     
+      <!--<class name="com.AutomatiomTestCases.baseTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
