@@ -146,7 +146,7 @@ public class BrowsersInvoked {
 		options.addArguments("--remote-allow-origins=*");
 		options.addArguments("disable-blink-features=AutomationControlled");
 		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		options.addArguments("--headless");
+		// options.addArguments("--headless");
 		options.addArguments("--window-size=1552x832");
 		options.addArguments("disable-blink-features=AutomationControlled");
 		WebDriver driver = new ChromeDriver(options);
