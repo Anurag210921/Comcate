@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="testComponents.Listeners"/>
-  </listeners>
-  <test thread-count="2" parallel="classes" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AutomatiomTestCases.buy_watch">
+      <class name="TestCases.CloseCase">
         <methods>
-          <include name="login"/>
-          <include name="placeOrder"/>
-          <include name="verify_placedOrder"/>
+          <include name="CloseCase_CloseConfirmationPopupForCloseCase"/>
+          <include name="closeDriver"/>
+          <include name="LoginTest"/>
+          <include name="CloseCase_OpenCloseCasePopup"/>
+          <include name="CloseCase_VerifyClosedStatus"/>
+          <include name="CloseCase_ConfirmationPopupForCloseCaseInvalidViolations"/>
+          <include name="CloseCase_PreRequisite"/>
+          <include name="CloseCase_PreRequisiteCaseCreationForCloseCase"/>
+          <include name="setUp"/>
+          <include name="CloseCase_SelectForcedToggleBtn"/>
+          <include name="CloseCase_VerifyVoluntaryToggleBtnState"/>
+          <include name="CloseCase_CloseCasewithValidViolations"/>
+          <include name="CloseCase_CloseCloseCasePopup"/>
+          <include name="deleteExistingReport"/>
+          <include name="CloseCase_VerifyClosedStatusViaPerformInspection"/>
+          <include name="beforesuite"/>
         </methods>
-      </class> <!-- com.AutomatiomTestCases.buy_watch -->
-      <class name="com.AutomatiomTestCases.MenClothing">
-        <methods>
-          <include name="login"/>
-          <include name="shop_men_hoodie"/>
-          <include name="delete_all_cart_items"/>
-        </methods>
-      </class> <!-- com.AutomatiomTestCases.MenClothing -->
+      </class> <!-- TestCases.CloseCase -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

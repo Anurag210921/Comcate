@@ -3,12 +3,26 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AutomatiomTestCases.buy_watch">
+      <class name="TestCases.CloseCase">
         <methods>
-          <include name="login"/>
-          <include name="verify_placedOrder"/>
+          <include name="CloseCase_CloseConfirmationPopupForCloseCase"/>
+          <include name="closeDriver"/>
+          <include name="LoginTest"/>
+          <include name="CloseCase_OpenCloseCasePopup"/>
+          <include name="CloseCase_VerifyClosedStatus"/>
+          <include name="CloseCase_ConfirmationPopupForCloseCaseInvalidViolations"/>
+          <include name="CloseCase_PreRequisite"/>
+          <include name="CloseCase_PreRequisiteCaseCreationForCloseCase"/>
+          <include name="setUp"/>
+          <include name="CloseCase_SelectForcedToggleBtn"/>
+          <include name="CloseCase_VerifyVoluntaryToggleBtnState"/>
+          <include name="CloseCase_CloseCasewithValidViolations"/>
+          <include name="CloseCase_CloseCloseCasePopup"/>
+          <include name="deleteExistingReport"/>
+          <include name="CloseCase_VerifyClosedStatusViaPerformInspection"/>
+          <include name="beforesuite"/>
         </methods>
-      </class> <!-- com.AutomatiomTestCases.buy_watch -->
+      </class> <!-- TestCases.CloseCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

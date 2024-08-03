@@ -1,21 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+<suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
-    <listener class-name="com.AutomatiomTestCases.Listeners"/>
+    <listener class-name="Listeners.ListenersTestng"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)" verbose="0">
+  <test thread-count="3" parallel="classes" name="Test2(failed)" verbose="0">
     <classes>
-      <class name="com.AutomatiomTestCases.buy_watch">
+      <class name="TestCases.DashBoard">
         <methods>
-          <include name="checkout"/>
-          <include name="add_watch_to_cart"/>
-          <include name="placeOrder"/>
-          <include name="verify_placedOrder"/>
-          <include name="tearDown"/>
-          <include name="login"/>
+          <include name="setUp"/>
+          <include name="TC_Dashboard_CompareCountOfCasesWithCLP"/>
+          <include name="deleteExistingReport"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.AutomatiomTestCases.buy_watch -->
+      </class> <!-- TestCases.DashBoard -->
+      <class name="TestCases.Notices">
+        <methods>
+          <include name="setUp"/>
+          <include name="Notices_VerifyPreviewPopup"/>
+          <include name="deleteExistingReport"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- TestCases.Notices -->
+      <class name="TestCases.PerformInspection">
+        <methods>
+          <include name="PerformInspection_OpenGenerateNoticepopup"/>
+          <include name="PerformInspection_SelectForcedToggleButton"/>
+          <include name="PerformInspection_VerifyContinueButtonPresenceOnHtmlSelected"/>
+          <include name="PerformInspection_VerifyFirstNoticeState"/>
+          <include name="PerformInspection_VerifyRecipientSubSectionPresence"/>
+          <include name="PerformInspection_CloseConfirmationPopup"/>
+          <include name="PerformInspection_AddAttachment"/>
+          <include name="PerformInspection_UpdateNoticeIssueDate"/>
+          <include name="PerformInspection_AddInspectionNote"/>
+          <include name="PerformInspection_VerifyContinueButtonPresence"/>
+          <include name="PerformInspection_OpenConfirmationPopupOnExitButton"/>
+          <include name="PerformInspection_SelectAnyToggleButton"/>
+          <include name="PerformInspection_VerifyVerificationPendingStatusForViolation"/>
+          <include name="PerformInspection_OpenVerificationInspectionInProgressPage"/>
+          <include name="closeDriver"/>
+          <include name="setUp"/>
+          <include name="PerformInspection_OpenConfirmationPopupForCompleteInspection"/>
+          <include name="PerformInspection_EnterCertifiedMailNumber"/>
+          <include name="PerformInspection_SelectAnyNotice"/>
+          <include name="deleteExistingReport"/>
+          <include name="PerformInspection_VerifyLoggedInUserToggleButtonState"/>
+          <include name="PerformInspection_VerifyVoluntaryToggleButtonState"/>
+          <include name="PerformInspection_OpenConfirmationPopupForCloseCaseButton"/>
+          <include name="PerformInspection_EditVerifyViolationSection"/>
+          <include name="PerformInspection_VerifySection1Label"/>
+          <include name="PerformInspection_VerifyRecipientNoLongerMandatory"/>
+          <include name="PerformInspection_SelectAnyToggleButtonForViolation"/>
+          <include name="PerformInspection_ExpandSection3"/>
+          <include name="PerformInspection_PreRequisite_Contacts"/>
+          <include name="PerformInspection_VerifyPrintToggleButtonState"/>
+          <include name="PerformInspection_CloseGenerateNoticePopup"/>
+          <include name="PerformInspection_OpenCloseCasePopup"/>
+          <include name="PerformInspection_VerifyOpenStatusForViolation"/>
+          <include name="PerformInspection_VerifyResponsiblePartySectionPresence"/>
+          <include name="PerformInspection_AddTextToTextBox"/>
+          <include name="PerformInspection_SelectNoNoticeRequiredCheckbox"/>
+          <include name="PerformInspection_ExpandSection2OnContinue"/>
+          <include name="PerformInspection_CloseConfirmationPopupForExitButto"/>
+          <include name="PerformInspection_UpdateFollowUpInspectionDate"/>
+        </methods>
+      </class> <!-- TestCases.PerformInspection -->
+      <class name="TestCases.CDP">
+        <methods>
+          <include name="CDP_VerifyUserAbletoMakePaymentAsVoid"/>
+          <include name="CDP_VerifyCaseHistory"/>
+          <include name="CDP_VerifyAddPaymentFromFineAndPaymentDetalis"/>
+          <include name="CDP_VerifyOverdueFinePayment"/>
+          <include name="CDP_VerifyUserAbletoMakeFineAsVoid"/>
+          <include name="setUp"/>
+          <include name="CDP_VerifyPrintCaseDetailsPage"/>
+          <include name="deleteExistingReport"/>
+          <include name="CDP_VerifyOustandingBalWithCLP"/>
+        </methods>
+      </class> <!-- TestCases.CDP -->
+      <class name="TestCases.CCP">
+        <methods>
+          <include name="CCP_ReopenAddAttachmentsPopup"/>
+          <include name="closeDriver"/>
+          <include name="CCP_ValidationMsgForNoViolationData"/>
+          <include name="setUp"/>
+          <include name="deleteExistingReport"/>
+          <include name="CCP_OpenViolationWithEntityPopup"/>
+          <include name="CCP_AddViolationWithoutEntity"/>
+          <include name="CCP_AddAnAttachment"/>
+        </methods>
+      </class> <!-- TestCases.CCP -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

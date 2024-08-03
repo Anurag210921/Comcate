@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="testComponents.Listeners"/>
+    <listener class-name="Listeners.ListenersTestng"/>
   </listeners>
-  <test thread-count="2" parallel="classes" name="Test(failed)">
+  <test thread-count="3" parallel="classes" name="Test2(failed)">
     <classes>
-      <class name="com.AutomatiomTestCases.buy_watch">
+      <class name="TestCases.CCPDirect20">
         <methods>
-          <include name="login"/>
-          <include name="placeOrder"/>
-          <include name="verify_placedOrder"/>
+          <include name="CCP_VerifyValidationAddressOfNotGISValidateAdddress"/>
+          <include name="CCP_ValidationMsgForNoAddressDetails"/>
+          <include name="VerifyPinAddressDetailsMappedWithMappingGISData"/>
+          <include name="CCP_OpenAddAddressManuallyPopup"/>
+          <include name="CCP_VerifySelectAddressFromComcateApplicationAddressPinAddress"/>
+          <include name="CCP_VerifyAddSecUnitNumberUsingPlusAddSecondaryButton"/>
+          <include name="closeDriver"/>
+          <include name="CCP_AddTheAddressManually"/>
+          <include name="CCP_VerifySelectAddressAPNSection"/>
+          <include name="CCP_CreateCaseWithAPNDataAddressPinAPNAddress"/>
+          <include name="CCP_VerifyGISComacteAPNSectionUnderLocationTile"/>
+          <include name="CCP_VerifySecondaryUnitNumberUpdated"/>
+          <include name="VerifySearchAddressDetailsMappedWithMappingGISData"/>
+          <include name="CCP_CreateCaseWithAPNDataAddressPinGISDataddress"/>
+          <include name="CCP_CreateCaseWithAPNDataAddress"/>
+          <include name="CCP_CreateCaseWithGISDataAddress"/>
+          <include name="deleteExistingReport"/>
+          <include name="CCP_CloseAddAddressManuallyPopup"/>
+          <include name="CCP_CreateCaseWithComcateApplicationAddress"/>
+          <include name="CCP_VerifySelectAddressRomComcateApplicationAddress"/>
+          <include name="setUp"/>
+          <include name="CCP_VerifySelectAddressAPNSectionPinAddress"/>
         </methods>
-      </class> <!-- com.AutomatiomTestCases.buy_watch -->
-      <class name="com.AutomatiomTestCases.MenClothing">
+      </class> <!-- TestCases.CCPDirect20 -->
+      <class name="TestCases.CCP">
         <methods>
-          <include name="login"/>
-          <include name="shop_men_hoodie"/>
-          <include name="delete_all_cart_items"/>
+          <include name="CCP_ReopenAddAttachmentsPopup"/>
+          <include name="closeDriver"/>
+          <include name="setUp"/>
+          <include name="deleteExistingReport"/>
+          <include name="CCP_AddAnAttachment"/>
         </methods>
-      </class> <!-- com.AutomatiomTestCases.MenClothing -->
+      </class> <!-- TestCases.CCP -->
+      <class name="TestCases.CDPGisDirect20">
+        <methods>
+          <include name="CDPGis_EditLocationonPinGISValidatedButtonAppearCDP"/>
+          <include name="setUp"/>
+          <include name="CDPGis_VerifyUserAbletoValidateAddressWithGISDataAddressOnCDP"/>
+          <include name="CDPGis_VerifyUserAbletoValidateAddressWithGISAPNAddressOnCDP"/>
+          <include name="CDPGis_ValidatedManuallyAddedAddressOnCDP"/>
+          <include name="CDPGis_EditLocationonSearchLocationCDP"/>
+          <include name="CDPGis_EditLocationonPinCDP"/>
+          <include name="deleteExistingReport"/>
+          <include name="closeDriver"/>
+          <include name="CDPGis_EditLocationonSearchAPNGISValidatedButtonAppearCDP"/>
+          <include name="CDPGis_ValidatedAddressOnWithPinLocationCDP"/>
+        </methods>
+      </class> <!-- TestCases.CDPGisDirect20 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
