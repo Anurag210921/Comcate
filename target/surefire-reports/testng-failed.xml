@@ -1,75 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite2]" guice-stage="DEVELOPMENT" verbose="0">
+<suite thread-count="3" parallel="classes" name="Failed suite [CESuite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="Listeners.ListenersTestng"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="CE2(failed)" verbose="0">
+  <test thread-count="3" parallel="classes" name="CETest1(failed)" verbose="0">
     <classes>
-      <class name="TestCases.CLP">
+      <class name="TestCases.CloseCase">
         <methods>
-          <include name="setUp"/>
-          <include name="CLP_VerifyMineButtonApplication"/>
-          <include name="CLP_VerifyTotalCountOfCases"/>
-          <include name="deleteExistingReport"/>
           <include name="closeDriver"/>
-        </methods>
-      </class> <!-- TestCases.CLP -->
-      <class name="TestCases.VSFineLinkedToNotices">
-        <methods>
-          <include name="setUp"/>
-          <include name="verifyFlatFineWithNoticeDisplayedForGenerateNotice"/>
-          <include name="verifyViolationSpecificFineIsDisplayedOnPerformInspection"/>
-          <include name="deleteExistingReport"/>
-          <include name="verifyFlatFineWithNoticeAmountIsDisplayedForGenerateNotice"/>
-        </methods>
-      </class> <!-- TestCases.VSFineLinkedToNotices -->
-      <class name="TestCases.VSFineLinkedFADoc">
-        <methods>
-          <include name="setUp"/>
-          <include name="verifyCreateViolationSpecficfineFADocument"/>
-          <include name="verifyFineonFinanacePage"/>
-          <include name="cleanUp"/>
-          <include name="deleteExistingReport"/>
-          <include name="verifyAssocitedFineAppearWithFADocOnFAA"/>
-        </methods>
-      </class> <!-- TestCases.VSFineLinkedFADoc -->
-      <class name="TestCases.FlatFineWithNotice">
-        <methods>
-          <include name="flatFineWithNotice_verifyFlatFineWithNoticeDisplayedForGenerateNotice"/>
-          <include name="flatFineWithNotice_verifyFlatFineWithNoticeAmountIsDisplayedForGenerateNotice"/>
+          <include name="LoginTest"/>
+          <include name="CloseCase_OpenCloseCasePopup"/>
+          <include name="CloseCase_CloseCloseCasePopup"/>
+          <include name="CloseCase_PreRequisite"/>
           <include name="deleteExistingReport"/>
           <include name="setUp"/>
-          <include name="flatFineWithNotice_verifyAddedFineDisplayedUnderFinancePage"/>
+          <include name="beforesuite"/>
         </methods>
-      </class> <!-- TestCases.FlatFineWithNotice -->
-      <class name="TestCases.ExistingNotice">
-        <methods>
-          <include name="existingNotice_DeleteNotice"/>
-          <include name="deleteExistingReport"/>
-          <include name="closeDriver"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- TestCases.ExistingNotice -->
-      <class name="TestCases.UserManagement">
-        <methods>
-          <include name="UserManagement_VerifyUpdatedUserDetails"/>
-          <include name="setUp"/>
-          <include name="UserManagement_VerifyGroupCreationWithoutProdSettings"/>
-          <include name="closeDriver"/>
-          <include name="deleteExistingReport"/>
-          <include name="UserManagement_OpenEditUserPopup"/>
-        </methods>
-      </class> <!-- TestCases.UserManagement -->
-      <class name="TestCases.EscalatedNoticesCDP">
-        <methods>
-          <include name="EscalatedNoticesCDP_VerifyRejectNoticeOutsideGroupManager"/>
-          <include name="closeDriver"/>
-          <include name="EscalatedNoticesCDP_VerifyApproveNoticeNotAppear"/>
-          <include name="deleteExistingReport"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- TestCases.EscalatedNoticesCDP -->
+      </class> <!-- TestCases.CloseCase -->
     </classes>
-  </test> <!-- CE2(failed) -->
-</suite> <!-- Failed suite [Suite2] -->
+  </test> <!-- CETest1(failed) -->
+</suite> <!-- Failed suite [CESuite] -->

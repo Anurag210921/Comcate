@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeSuite;
 
 import CommonMethods.PropertiesUtils;
 import Constant.CRMConstants;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowsersInvoked {
 
@@ -141,15 +142,17 @@ public class BrowsersInvoked {
 
 	public static WebDriver Setup() {
 		RunEnvironmentSetup();
-		ChromeOptions options = new ChromeOptions();
-		options.setBrowserVersion(PropertiesUtils.getPropertyValue("ChromeVersion"));
-		options.addArguments("--remote-allow-origins=*");
-		options.addArguments("disable-blink-features=AutomationControlled");
-		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		options.addArguments("--headless");
-		options.addArguments("--window-size=1552x832");
-		options.addArguments("disable-blink-features=AutomationControlled");
-		WebDriver driver = new ChromeDriver(options);
+		  // Set up ChromeDriver using WebDriverManager
+        WebDriverManager.chromedriver().setup();
+		
+		
+//		options.addArguments("--remote-allow-origins=*");
+//		options.addArguments("disable-blink-features=AutomationControlled");
+//		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+//	//	options.addArguments("--headless");
+//		options.addArguments("--window-size=1552x832");
+//		options.addArguments("disable-blink-features=AutomationControlled");
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		// getting size of window//
