@@ -2,47 +2,47 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-03T23:22:34 IST" name="CESuite" finished-at="2024-08-03T23:24:00 IST" duration-ms="85405">
+  <suite started-at="2024-08-03T23:45:25 IST" name="CESuite" finished-at="2024-08-03T23:46:48 IST" duration-ms="82806">
     <groups>
     </groups>
-    <test started-at="2024-08-03T23:22:34 IST" name="CETest1" finished-at="2024-08-03T23:24:00 IST" duration-ms="85405">
+    <test started-at="2024-08-03T23:45:25 IST" name="CETest1" finished-at="2024-08-03T23:46:48 IST" duration-ms="82806">
       <class name="TestCases.CloseCase">
-        <test-method is-config="true" signature="beforesuite(org.testng.ITestContext)[pri:0, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:22:34 IST" name="beforesuite" finished-at="2024-08-03T23:22:34 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="beforesuite(org.testng.ITestContext)[pri:0, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:45:25 IST" name="beforesuite" finished-at="2024-08-03T23:45:25 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6b9ce1bf]]>
+                <![CDATA[org.testng.TestRunner@6f2cb653]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="deleteExistingReport()[pri:0, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:22:34 IST" name="deleteExistingReport" finished-at="2024-08-03T23:22:34 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="deleteExistingReport()[pri:0, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:45:25 IST" name="deleteExistingReport" finished-at="2024-08-03T23:45:25 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteExistingReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:22:34 IST" name="setUp" finished-at="2024-08-03T23:22:37 IST" duration-ms="2689" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:45:25 IST" name="setUp" finished-at="2024-08-03T23:45:28 IST" duration-ms="2611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginTest()[pri:0, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:22:37 IST" name="LoginTest" description="Login Test Case" finished-at="2024-08-03T23:23:00 IST" duration-ms="23288" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:45:28 IST" name="LoginTest" description="Login Test Case" finished-at="2024-08-03T23:45:48 IST" duration-ms="20623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method signature="CloseCase_PreRequisite()[pri:1, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:23:00 IST" name="CloseCase_PreRequisite" description=" CloseCase_ConfirmationPopupForCloseCaseValidViolations " finished-at="2024-08-03T23:23:59 IST" duration-ms="58814" status="PASS">
+        <test-method signature="CloseCase_PreRequisite()[pri:1, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:45:48 IST" name="CloseCase_PreRequisite" description=" CloseCase_ConfirmationPopupForCloseCaseValidViolations " finished-at="2024-08-03T23:46:46 IST" duration-ms="57475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseCase_PreRequisite -->
-        <test-method signature="CloseCase_OpenCloseCasePopup()[pri:2, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:23:59 IST" name="CloseCase_OpenCloseCasePopup" description=" Verify that &#039;Close Case&#039; popup opens up, when user selects &#039;Close Case&#039; option, after clicking on &#039;More&#039; button, on CDP. " finished-at="2024-08-03T23:23:59 IST" duration-ms="193" status="PASS">
+        <test-method signature="CloseCase_OpenCloseCasePopup()[pri:2, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:46:46 IST" name="CloseCase_OpenCloseCasePopup" description=" Verify that &#039;Close Case&#039; popup opens up, when user selects &#039;Close Case&#039; option, after clicking on &#039;More&#039; button, on CDP. " finished-at="2024-08-03T23:46:46 IST" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseCase_OpenCloseCasePopup -->
-        <test-method signature="CloseCase_CloseCloseCasePopup()[pri:3, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:23:59 IST" name="CloseCase_CloseCloseCasePopup" description=" Verify that &#039;Close Case&#039; popup gets closed, when user clicks on &#039;Cross&#039; icon or &#039;Cancel&#039; button, on &#039;Verify Violations&#039; section. " finished-at="2024-08-03T23:24:00 IST" duration-ms="280" status="PASS">
+        <test-method signature="CloseCase_CloseCloseCasePopup()[pri:3, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:46:46 IST" name="CloseCase_CloseCloseCasePopup" description=" Verify that &#039;Close Case&#039; popup gets closed, when user clicks on &#039;Cross&#039; icon or &#039;Cancel&#039; button, on &#039;Verify Violations&#039; section. " finished-at="2024-08-03T23:46:47 IST" duration-ms="1413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseCase_CloseCloseCasePopup -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.CloseCase@4dc27487]" started-at="2024-08-03T23:24:00 IST" name="closeDriver" finished-at="2024-08-03T23:24:00 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.CloseCase@1b919693]" started-at="2024-08-03T23:46:47 IST" name="closeDriver" finished-at="2024-08-03T23:46:48 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
