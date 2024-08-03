@@ -146,7 +146,7 @@ public class BrowsersInvoked {
 		options.addArguments("--remote-allow-origins=*");
 		options.addArguments("disable-blink-features=AutomationControlled");
 		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		// options.addArguments("--headless");
+		options.addArguments("--headless");
 		options.addArguments("--window-size=1552x832");
 		options.addArguments("disable-blink-features=AutomationControlled");
 		WebDriver driver = new ChromeDriver(options);
@@ -426,9 +426,9 @@ public class BrowsersInvoked {
 				Instance = PropertiesUtils.getPropertyValue("InstanceStage");
 				AgencyUsername = PropertiesUtils.getPropertyValue("AgencyUsernameStage");
 				AgencyPassword = PropertiesUtils.getPropertyValue("AgencyPasswordStage");
-			//	AgencyCRMUsername = PropertiesUtils.getPropertyValue("AgencyCRMUsername");
-			//	AgencyCEUsername = PropertiesUtils.getPropertyValue("AgencyCEUsername");
-			//	AgencyCE2Username = PropertiesUtils.getPropertyValue("AgencyCE2Username");
+				// AgencyCRMUsername = PropertiesUtils.getPropertyValue("AgencyCRMUsername");
+				// AgencyCEUsername = PropertiesUtils.getPropertyValue("AgencyCEUsername");
+				// AgencyCE2Username = PropertiesUtils.getPropertyValue("AgencyCE2Username");
 
 				StreetAddress = PropertiesUtils.getPropertyValue("StreetAddressQAEnterPrise");
 				City = PropertiesUtils.getPropertyValue("CityQAEnterPrise");
@@ -580,16 +580,16 @@ public class BrowsersInvoked {
 			}
 		}
 	}
-	
+
 	public static String activeGroup;
 	public static String suiteName;
-	
+
 	@BeforeSuite(alwaysRun = true)
-    public void beforesuite(ITestContext context) {
-        // Retrieve the groups this method belongs to
-        activeGroup = String.join(", ", context.getCurrentXmlTest().getIncludedGroups());
-        System.out.println(context.getSuite().getName());
-        suiteName = context.getSuite().getName();
-    }
+	public void beforesuite(ITestContext context) {
+		// Retrieve the groups this method belongs to
+		activeGroup = String.join(", ", context.getCurrentXmlTest().getIncludedGroups());
+		System.out.println(context.getSuite().getName());
+		suiteName = context.getSuite().getName();
+	}
 
 }
