@@ -18,7 +18,7 @@ public class BrowsersInvoked {
 
 	// public static ExtentReports extent;
 	// public static ExtentTest extentTest;
-	public static String browser = PropertiesUtils.getPropertyValue("browserMain");
+	public static String browser = "CHROME";
 	public static String RunEnvironment = PropertiesUtils.getPropertyValue("RunEnvironment");
 	public static String AgencyName = PropertiesUtils.getPropertyValue("AgencyName");
 	public static String agencyConfig = PropertiesUtils.getPropertyValue("agencyConfig");

@@ -45,7 +45,6 @@ Constant\CRMConstants.class
 POM\CCPDirect20Utility.class
 TestCases\CDPGisDirect20.class
 POM\UserManagementUtility.class
-POM\CategoryUtility.class
 CommonMethods\Helper.class
 TestCases\CSDPInternalGISDirect20.class
 POM\CCPUtility.class
